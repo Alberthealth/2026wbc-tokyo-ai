@@ -3,6 +3,7 @@
 ## 專案設定
 
 - **專案名稱**: 2026wbc-tokyo-ai
+- **Node 版本**: 20 (透過 .nvmrc)
 - **建置指令**: `npm run build`
 - **輸出目錄**: `dist`
 - **後端 API**: `/api/gemini` (Cloudflare Pages Functions)
