@@ -4,5 +4,11 @@ name = "2026wbc-tokyo-ai"
 compatibility_date = "2024-01-01"
 pages_build_output_dir = "dist"
 
+# 讓 npx wrangler deploy 能正確部署 dist 目錄（當 Deploy command 無法改為空時）
+[assets]
+directory = "./dist"
+html_handling = "auto-trailing-slash"
+not_found_handling = "single-page-application"
+
 # GEMINI_API_KEY 請在 Cloudflare Dashboard 或使用 wrangler secret put 設定
 # 設定方式: npx wrangler pages secret put GEMINI_API_KEY
