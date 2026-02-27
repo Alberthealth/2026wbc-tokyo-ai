@@ -1,8 +1,8 @@
-# Cloudflare Pages 部署指南 - 2026WBC-Tokyo-ai
+# Cloudflare Pages 部署指南 - 2026wbc-tokyo-ai
 
 ## 專案設定
 
-- **專案名稱**: 2026WBC-Tokyo-ai
+- **專案名稱**: 2026wbc-tokyo-ai
 - **建置指令**: `npm run build`
 - **輸出目錄**: `dist`
 - **後端 API**: `/api/gemini` (Cloudflare Pages Functions)
@@ -16,7 +16,7 @@
 3. 點擊 **Create application** → **Pages** → **Connect to Git**
 4. 選擇你的 Git 倉庫
 5. 設定建置：
-   - **Project name**: `2026WBC-Tokyo-ai`
+   - **Project name**: `2026wbc-tokyo-ai`
    - **Build command**: `npm run build`
    - **Build output directory**: `dist`
    - **Root directory**: 留空（若專案在根目錄）
@@ -32,11 +32,11 @@ npm install -g wrangler
 npx wrangler login
 
 # 建立 Pages 專案（若尚未建立）
-npx wrangler pages project create 2026WBC-Tokyo-ai
+npx wrangler pages project create 2026wbc-tokyo-ai
 
 # 建置並部署
 npm run build
-npx wrangler pages deploy dist --project-name=2026WBC-Tokyo-ai
+npx wrangler pages deploy dist --project-name=2026wbc-tokyo-ai
 ```
 
 ## 二、設定 GEMINI_API_KEY（Secrets）
@@ -45,7 +45,7 @@ npx wrangler pages deploy dist --project-name=2026WBC-Tokyo-ai
 
 ### 透過 Dashboard
 
-1. 前往 **Workers & Pages** → 選擇 **2026WBC-Tokyo-ai**
+1. 前往 **Workers & Pages** → 選擇 **2026wbc-tokyo-ai**
 2. 點擊 **Settings** → **Environment variables**
 3. 在 **Production** 或 **Preview** 區塊點擊 **Add variable**
 4. 選擇 **Encrypt**（Secrets）
@@ -57,7 +57,7 @@ npx wrangler pages deploy dist --project-name=2026WBC-Tokyo-ai
 
 ```bash
 # 設定 Production 環境
-npx wrangler pages secret put GEMINI_API_KEY --project-name=2026WBC-Tokyo-ai
+npx wrangler pages secret put GEMINI_API_KEY --project-name=2026wbc-tokyo-ai
 
 # 依提示輸入你的 Gemini API Key
 ```
@@ -71,7 +71,7 @@ npx wrangler pages secret put GEMINI_API_KEY --project-name=2026WBC-Tokyo-ai
 ```bash
 # Terminal 1：建置並啟動 Pages 開發伺服器（含 Functions）
 npm run build
-npx wrangler pages dev dist --project-name=2026WBC-Tokyo-ai
+npx wrangler pages dev dist --project-name=2026wbc-tokyo-ai
 
 # Terminal 2：啟動 Vite 開發伺服器（會 proxy /api 到 wrangler）
 npm run dev

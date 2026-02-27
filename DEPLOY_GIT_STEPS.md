@@ -41,7 +41,7 @@ git commit -m "feat: 2026 WBC 東京巨蛋賽事懶人包"
 ## 步驟 2：在 GitHub 建立倉庫
 
 1. 前往 https://github.com/new  
-2. **Repository name**：`2026WBC-Tokyo-ai`  
+2. **Repository name**：`2026wbc-tokyo-ai`  
 3. **Description**（可選）：2026 WBC 東京巨蛋賽事懶人包  
 4. 選擇 **Public**  
 5. **不要**勾選 "Add a README file"  
@@ -54,7 +54,7 @@ git commit -m "feat: 2026 WBC 東京巨蛋賽事懶人包"
 在專案目錄執行（將 `你的帳號` 換成你的 GitHub 使用者名稱）：
 
 ```powershell
-git remote add origin https://github.com/你的帳號/2026WBC-Tokyo-ai.git
+git remote add origin https://github.com/你的帳號/2026wbc-tokyo-ai.git
 git branch -M main
 git push -u origin main
 ```
@@ -72,9 +72,9 @@ git push -u origin main
 3. 點擊 **Create application** → **Pages**  
 4. 選擇 **Connect to Git**  
 5. 授權 GitHub（若尚未授權）  
-6. 選擇倉庫 **2026WBC-Tokyo-ai**  
+6. 選擇倉庫 **2026wbc-tokyo-ai**  
 7. 設定建置：
-   - **Project name**：`2026WBC-Tokyo-ai`
+   - **Project name**：`2026wbc-tokyo-ai`
    - **Production branch**：`main`
    - **Build command**：`npm run build`
    - **Build output directory**：`dist`

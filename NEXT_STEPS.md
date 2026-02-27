@@ -35,7 +35,7 @@ cd "d:\個人資料\個人學習\vibe coding\test"
 ```
 
 此腳本會：
-- 在 GitHub 建立 `2026WBC-Tokyo-ai` 倉庫
+- 在 GitHub 建立 `2026wbc-tokyo-ai` 倉庫
 - 推送程式碼到 GitHub
 
 ---
@@ -45,9 +45,9 @@ cd "d:\個人資料\個人學習\vibe coding\test"
 1. 前往 https://dash.cloudflare.com/
 2. **Workers & Pages** → **Create application** → **Pages**
 3. 選擇 **Connect to Git**
-4. 選擇 **2026WBC-Tokyo-ai** 倉庫
+4. 選擇 **2026wbc-tokyo-ai** 倉庫
 5. 設定：
-   - Project name: `2026WBC-Tokyo-ai`
+   - Project name: `2026wbc-tokyo-ai`
    - Build command: `npm run build`
    - Build output directory: `dist`
 6. **Save and Deploy**
