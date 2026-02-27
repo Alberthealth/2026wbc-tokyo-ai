@@ -1,6 +1,6 @@
 # Cloudflare Pages 專案設定
-# 專案名稱: 2026WBC_Tokyo-ai
-name = "2026WBC_Tokyo-ai"
+# 專案名稱: 2026WBC-Tokyo-ai (Cloudflare 不支援底線，使用連字號)
+name = "2026WBC-Tokyo-ai"
 compatibility_date = "2024-01-01"
 pages_build_output_dir = "dist"
 

@@ -6,7 +6,7 @@
 
 ## 部署至 Cloudflare Pages
 
-專案名稱：**2026WBC_Tokyo-ai**
+專案名稱：**2026WBC-Tokyo-ai**
 
 詳細部署步驟請參考 [DEPLOY.md](DEPLOY.md)。
 

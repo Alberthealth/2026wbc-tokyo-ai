@@ -4,14 +4,14 @@
 
 param(
     [Parameter(Mandatory=$true)]
-    [string]$GitHubRepo  # 例如: "your-username/2026WBC_Tokyo-ai"
+    [string]$GitHubRepo  # 例如: "your-username/2026WBC-Tokyo-ai"
 )
 
 $ErrorActionPreference = "Stop"
 $projectRoot = Split-Path -Parent (Split-Path -Parent $PSScriptRoot)
 Set-Location $projectRoot
 
-Write-Host "=== 2026WBC_Tokyo-ai Git 部署 ===" -ForegroundColor Cyan
+Write-Host "=== 2026WBC-Tokyo-ai Git 部署 ===" -ForegroundColor Cyan
 Write-Host ""
 
 # 檢查 Git
@@ -46,7 +46,7 @@ if (-not $remote) {
 Write-Host ""
 Write-Host "=== 下一步 ===" -ForegroundColor Green
 Write-Host "1. 在 GitHub 建立新倉庫: https://github.com/new"
-Write-Host "   - 倉庫名稱建議: 2026WBC_Tokyo-ai"
+Write-Host "   - 倉庫名稱建議: 2026WBC-Tokyo-ai"
 Write-Host "   - 不要勾選 'Add a README'"
 Write-Host ""
 Write-Host "2. 推送程式碼:"
@@ -56,7 +56,7 @@ Write-Host ""
 Write-Host "3. 前往 Cloudflare Dashboard:"
 Write-Host "   https://dash.cloudflare.com/ -> Workers & Pages"
 Write-Host "   Create application -> Pages -> Connect to Git"
-Write-Host "   選擇剛推送的倉庫，專案名稱: 2026WBC_Tokyo-ai"
+Write-Host "   選擇剛推送的倉庫，專案名稱: 2026WBC-Tokyo-ai"
 Write-Host "   Build command: npm run build"
 Write-Host "   Build output directory: dist"
 Write-Host ""

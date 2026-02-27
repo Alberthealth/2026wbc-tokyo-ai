@@ -1,6 +1,6 @@
 @echo off
 chcp 65001 >nul
-echo === 2026WBC_Tokyo-ai Git 部署 ===
+echo === 2026WBC-Tokyo-ai Git 部署 ===
 echo.
 
 where git >nul 2>&1
@@ -28,17 +28,17 @@ if not errorlevel 1 (
 echo.
 echo === 下一步 ===
 echo 1. 在 GitHub 建立新倉庫: https://github.com/new
-echo    倉庫名稱建議: 2026WBC_Tokyo-ai
+echo    倉庫名稱建議: 2026WBC-Tokyo-ai
 echo    不要勾選 "Add a README"
 echo.
 echo 2. 設定遠端並推送:
-echo    git remote add origin https://github.com/你的帳號/2026WBC_Tokyo-ai.git
+echo    git remote add origin https://github.com/你的帳號/2026WBC-Tokyo-ai.git
 echo    git branch -M main
 echo    git push -u origin main
 echo.
 echo 3. 前往 Cloudflare: https://dash.cloudflare.com/
 echo    Workers ^& Pages -^> Create -^> Pages -^> Connect to Git
-echo    專案名稱: 2026WBC_Tokyo-ai
+echo    專案名稱: 2026WBC-Tokyo-ai
 echo    Build: npm run build
 echo    Output: dist
 echo.
